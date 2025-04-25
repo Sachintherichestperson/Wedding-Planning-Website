@@ -10,6 +10,7 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            scrollbar-width: none;
         }
         
         body {
@@ -348,6 +349,7 @@
             scroll-snap-type: x mandatory;
             max-width: 1200px;
             margin: 0 auto;
+            scrollbar-width: none;
         }
         
         .testimonial-card {

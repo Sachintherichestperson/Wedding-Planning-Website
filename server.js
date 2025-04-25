@@ -1,28 +1,30 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const ejs = require("ejs");
 
 app.use(express.static(path.join(__dirname, "public")));
+app.set("view engine", "ejs");
+
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.render("Index");
 });
 
 app.get("/Services", (req, res) => {
-    res.sendFile(path.join(__dirname, "Services.html"));
+    res.render("Services");
 });
 
 app.get("/Contact-us", (req, res) => {
-    res.sendFile(path.join(__dirname, "Contact-us.html"));
-})
+    res.render("Contact-us");
+});
 
 app.get("/FAQs", (req, res) => {
-    res.sendFile(path.join(__dirname, "FAQs.html"));
+    res.render("FAQs");
 });
 
 app.get("/About-us", (req, res) => {
-    res.sendFile(path.join(__dirname, "About-us.html"));
-
+    res.render("About-us");
 });
 
 app.listen(3000);
