@@ -221,9 +221,9 @@
             color: #555;
         }
         
-        .intro-section img {
+        .intro-section video {
             width: 100%;
-            max-width: 1000px;
+            max-width: 800px;
             border-radius: 20px;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
             margin-bottom: 50px;
@@ -407,6 +407,7 @@
             color: #666;
             font-size: 0.9rem;
         }
+        
         
         /* CTA Section */
         .cta-section {
@@ -622,6 +623,12 @@
             .services-grid {
                 grid-template-columns: 1fr;
             }
+
+            video{
+                width: inherit;
+                border-top-left-radius: 450px;
+                border-top-right-radius: 450px;
+            }
         }
         
         @media (max-width: 768px) {
@@ -635,6 +642,12 @@
             
             .service-hero {
                 height: 50vh;
+            }
+
+            video{
+                width: inherit;
+                border-top-left-radius: 280px;
+                border-top-right-radius: 280px;
             }
         }
         
