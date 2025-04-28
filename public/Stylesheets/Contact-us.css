@@ -507,12 +507,12 @@
             }
         }
 
-        .experience-card{
+            .experience-card{
                 width: 38%;
                 height: 45%;
                 padding: 20px;
                 flex-shrink: 0;
-                background-color: #aaa;
+                background-color: #ecb68b94;
             }
             .experience-card h4{
                 font-size: 25px;
